@@ -1,0 +1,24 @@
+ninja: no work to do.
+============== FBTT =================
+N: 100000000, M: 32, R: [32, 32], B: 10000, V: 464214
+param memory: 0.008 GB
+key: f4, fwd memory: 0.5473
+key: f4, peak memory: 7.9614
+ninja: no work to do.
+============== FBTT =================
+N: 100000000, M: 32, R: [32, 32], B: 20000, V: 927601
+param memory: 0.008 GB
+key: f4, fwd memory: 1.0767
+key: f4, peak memory: 15.8750
+ninja: no work to do.
+============== PyTorch =================
+N: 100000000, M: 32, R: [32, 32], B: 10000, V: 464214
+param memory: 11.922 GB
+key: f4, fwd memory: 11.9301
+key: f4, peak memory: 11.9855
+ninja: no work to do.
+============== PyTorch =================
+N: 100000000, M: 32, R: [32, 32], B: 20000, V: 927601
+param memory: 11.922 GB
+key: f4, fwd memory: 11.9384
+key: f4, peak memory: 12.0497
