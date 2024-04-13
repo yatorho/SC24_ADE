@@ -27,10 +27,13 @@ pip install .
 cd .. # back to the root directory
 ```
 
-Note: we have integrated EL-Rec into `elrec_ext` directory for to accommodate certain functional expansions.
+Note: we have integrated EL-Rec into `elrec_ext` directory for to accommodate certain functional expansions. Run the following command to install EL-Rec's kernel:
 
+```
+pip install elrec_ext/Efficient_TT
+```
 
-Before running the program, you need to manually append the project path to the environment variable `$PYTHONPATH`:
+Before running the evaluation program, you need to manually append the project path to the environment variable `$PYTHONPATH`:
 
 ```
 export PYTHONPATH=$PYTHONPATH:`pwd`
