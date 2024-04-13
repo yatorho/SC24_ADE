@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #SBATCH --account={your_account}
 #SBATCH --partition={your_partition}
 
@@ -6,7 +8,7 @@
 #SBATCH --ntasks-per-node=4
 #SBATCH --cpus-per-task=4
 
-# SBATCH -o figure16/slogs/dlrm4x4-%j.out
+#SBATCH -o figure16/slogs/dlrm4x4-%j.out
 
 run_script=${1:-"figure16/e2e.py"}
 local_batch_size=${2:-"8192"}
@@ -15,6 +17,9 @@ results_file=${5:-"figure16/results.txt"}
 
 sp_dir="datasets/dlrm_pt/2022/splits"
 
+if [ ! -d "figure16/slogs" ]; then
+    mkdir -p "figure16/slogs"
+fi
 
 # Batch-wise pipeline
 echo "Batch-wise Pipeline" > ${results_file}

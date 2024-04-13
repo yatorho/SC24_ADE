@@ -5,26 +5,18 @@ This repo is for SC 2024 artifacts evaluation.
 
 ## Environment Setup
 
-Get sourc code of EcoRec and unpack it to `your_path`:
+Get sourc code of EcoRec and unpack it to `your_path`. Run following commands to install EcoRec:
 
 ```
 cd {your_path}
-cd ecorec
-```
-
-Install EcoRec:
-
-```
-pip install .
+pip install codes
 ```
 
 Get source code of TT-Rec's kernel and install it:
 
 ```
 git clone https://github.com/facebookresearch/FBTT-Embedding
-cd FBTT-Embedding
-pip install .
-cd .. # back to the root directory
+pip install FBTT-Embedding
 ```
 
 Note: we have integrated EL-Rec into `elrec_ext` directory for to accommodate certain functional expansions. Run the following command to install EL-Rec's kernel:
