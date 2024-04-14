@@ -54,28 +54,22 @@ Note: Back to the root directory before running the above command.
 We provide some scripts to run the experiments and get the results for our paper, including:
 
 + Figure 3:
-
     - We provide codes to normalized lookup and memory compression rates with different numbers of TT-EMBs.
     - Please also refer to `figure3/README.md` for more details.
 
 + Figure 4:
-
     - We provide codes for redundancy analysis of DLRM datasets and TT computing pattern.
     - Please also refer to `figure4/README.md` for more details.
 
 + Figure 10:
-
     - We provide scripts to run the distributed DLRM training experiment.
     - Please also refer to `figure10/README.md` for more details.
 
 + Figure 11:
-
     - We provide scripts to evaluate the performance of TT-EMB's implementation of EcoRec, FBTT, and EL-Rec.
-
     - Please also refer to `figure11/README.md` for more details.
   
 + Figure 12:
-
     - We provide scripts to run the scaling efficiency experiment.
     - Please also refer to `figure12/README.md` for more details.
 
