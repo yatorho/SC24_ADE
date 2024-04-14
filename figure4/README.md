@@ -1,6 +1,6 @@
 # Evaluation for Figure 4 in the paper.
 
-enter root directory of the project, run the following command:
+Enter the root directory of the project, run the following command:
 
 ```
 figure4/run.sh

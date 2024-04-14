@@ -1,10 +1,10 @@
 # Evaluation for Figure 12 in the paper.
 
 Our distributed experiments are implemented in a supercomputing center equipped with a `slurm` scheduling system.
-Make sure there are eight nodes availble in your cluster, and each node has at least four GPUs.
+Make sure there are eight nodes available in your cluster, and each node has at least four GPUs.
 
 
-Then enter root directory of the project, and run the following command:
+Then enter the root directory of the project, and run the following command:
 
 ```
 figure12/run.sh {your_account} {your_partition}
@@ -12,9 +12,9 @@ figure12/run.sh {your_account} {your_partition}
 
 , replacing `{your_account}` and `{your_partition}` with the account and computational partition of your cluster.
 
-`run.sh` script will call sbatch to submit training task, and the results will be saved in `figure12/results.txt`. 
+`run.sh` script will call sbatch to submit training tasks, and the results will be saved in `figure12/results.txt`. 
 
-You can specify some paramters in `run.sh` and `e2e.py` to customize the experiment:
+You can specify some parameters in `run.sh` and `e2e.py` to customize the experiment:
 
 + `gpus_per_node`: Number of GPUs per node.
 
@@ -34,12 +34,12 @@ You can specify some paramters in `run.sh` and `e2e.py` to customize the experim
 
 + `--sp_dir`: Datasets directory.
 
-+ `--reodering`: Whether to enable reordering feature stategy for table-wise pipeline model. 
++ `--reodering`: Whether to enable reordering feature strategy  for table-wise pipeline model. 
 
-+ `--skew_degree`: Skew degree for table-wise pipeline grain sharding, i.e., slope feature counts stategy. This param only works with table-wise pipeline model.
++ `--skew_degree`: Skew degree for table-wise pipeline grain sharding, i.e., slope feature counts strategy . This param only works with table-wise pipeline model.
 
 + `--num_micro_keys`: Number of stages in pipeline scheduling. This param only works with table-wise pipeline model.
 
-+ `--num_micro_uidx`: Number of micro-batches for mico-batching strategy. This param only works with tabl-wise pipeline model
++ `--num_micro_uidx`: Number of micro-batches for mico-batching strategy. This param only works with table-wise pipeline model
 
 

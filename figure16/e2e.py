@@ -6,9 +6,6 @@ import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
 import torch.nn as nn
-from torch.cuda import cudart
-
-from data.dlrm_ds_stats import DLRMDataset, keyed_dlrm_datasets_load
 from ecorec.costs.sharding_plan import ShardingMethod, estimate_cost_matrix
 from ecorec.distributed import (batch_wise, data_parallel, model_parallel,
                                 table_wise)
@@ -16,6 +13,9 @@ from ecorec.dlrm import DLRM, DLRM_Meta
 from ecorec.models import MLP_Meta, TTEmbeddingLayer_Meta
 from ecorec.utils import (DurationTimer, interpret_dist, nvtx_pop, nvtx_push,
                           r0_print)
+from torch.cuda import cudart
+
+from data.dlrm_ds_stats import DLRMDataset, keyed_dlrm_datasets_load
 
 
 def match_sharding_type(sharding_method: str) -> table_wise.ShardingMethod:
@@ -865,20 +865,20 @@ if __name__ == "__main__":
         "--num_micro_uidx",
         type=int,
         default=2,
-        help="Number of micro-batches for mico-batching strategy. This param only works with tabl-wise pipeline model",
+        help="Number of micro-batches for mico-batching strategy. This param only works with table-wise pipeline model",
     )
     parser.add_argument(
         "--reordering",
         action="store_true",
         default=False,
-        help="Whether to enable reordering feature stategy for table-wise pipeline model.",
+        help="Whether to enable reordering feature strategy  for table-wise pipeline model.",
     )
     parser.add_argument(
         "--skew_degree",
         type=float,
         default=0.0,
         help="Skew degree for table-wise pipeline grain sharding, i.e., slope"
-        "feature count stategy. This param only works with table-wise pipeline model.",
+        "feature count strategy . This param only works with table-wise pipeline model.",
     )
 
     # ================== for MLP components =================
