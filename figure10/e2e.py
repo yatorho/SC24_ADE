@@ -672,7 +672,7 @@ if __name__ == "__main__":
         "--num_micro_uidx",
         type=int,
         default=2,
-        help="Number of micro-batches for mico-batching strategy. This param only works with table-wise pipeline model",
+        help="Number of micro-batches for micro-batching strategy. This param only works with table-wise pipeline model",
     )
     parser.add_argument(
         "--reordering",

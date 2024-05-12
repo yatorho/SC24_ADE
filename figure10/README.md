@@ -21,7 +21,7 @@ figure10/run.sh
 
 `run.sh` script will call sbatch to submit training tasks, and the results will be saved in `figure10/results.txt`. 
 
-You can specify some parameters in `dlrm8x4.dlrm` and `e2e.py` to customize the experiment:
+You can specify some parameters in `dlrm8x4.slrum` and `e2e.py` to customize the experiment:
 
 + `#SBATCH --nnodes`: Number of GPU nodes to use.
 
@@ -39,16 +39,16 @@ You can specify some parameters in `dlrm8x4.dlrm` and `e2e.py` to customize the 
 
 + `--over_arch_layer_sizes`: Comma-separated list of top MLP sizes.
 
-+ `--num_gloal_keys`: Number of features, i.e., table counts used.
++ `--num_global_keys`: Number of features, i.e., table counts used.
 
 + `--sp_dir`: Datasets directory.
 
-+ `--reodering`: Whether to enable reordering feature strategy  for table-wise pipeline model. 
++ `--reordering`: Whether to enable reordering feature strategy  for table-wise pipeline model. 
 
 + `--skew_degree`: Skew degree for table-wise pipeline grain sharding, i.e., slope feature counts strategy . This param only works with table-wise pipeline model.
 
 + `--num_micro_keys`: Number of stages in pipeline scheduling. This param only works with table-wise pipeline model.
 
-+ `--num_micro_uidx`: Number of micro-batches for mico-batching strategy. This param only works with table-wise pipeline model
++ `--num_micro_uidx`: Number of micro-batches for micro-batching strategy. This param only works with table-wise pipeline model
 
 
