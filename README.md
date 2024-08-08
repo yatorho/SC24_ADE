@@ -9,14 +9,15 @@ Get the source code of EcoRec and unpack it to `your_path`. Run the following co
 
 ```
 cd {your_path}
-pip install codes
+pip install -e .
 ```
 
-Download the source code of TT-Rec's kernel and install it:
+Download the source code of TT-Rec's kernel and install it according to the instructions in its `README.md` file:
 
 ```
 git clone https://github.com/facebookresearch/FBTT-Embedding
-pip install FBTT-Embedding
+# Follow the instructions in FBTT-Embedding/README.md
+# Return back to {your_path}
 ```
 
 Note: EL-Rec is integrated into the `elrec_ext` directory to accommodate specific functional expansions. Run the following command to install EL-Rec's kernel:
@@ -54,11 +55,11 @@ Note: Back to the root directory before running the above command.
 We provide some scripts to run the experiments and get the results for our paper, including:
 
 + Figure 3:
-    - We provide codes to normalized lookup and memory compression rates with different numbers of TT-EMBs.
+    - We provide code to normalized lookup and memory compression rates with different numbers of TT-EMBs.
     - Please also refer to `figure3/README.md` for more details.
 
 + Figure 4:
-    - We provide codes for redundancy analysis of DLRM datasets and TT computing pattern.
+    - We provide code for redundancy analysis of DLRM datasets and TT computing pattern.
     - Please also refer to `figure4/README.md` for more details.
 
 + Figure 10:
@@ -76,4 +77,3 @@ We provide some scripts to run the experiments and get the results for our paper
 + Figure 16:
     - We provide scripts to assess the efficiency of the table-wise pipeline model, reordering features, and slope feature counts strategy.
     - Please also refer to `figure16/README.md` for more details.
-

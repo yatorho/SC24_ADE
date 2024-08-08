@@ -367,8 +367,8 @@ def _assert_lengths_or_offsets_is_provides(
 ):
     assert lengths is not None or offsets is not None, (
         "Default `lengths` or `offsets` is not supported for EmbeddingBag. If you don't want to use `lengths` or `offsets`, "
-        "please assign `lengths` as `torch.arange(0, indices.numel() + 1, dtype=torch.int64, device=indices.device)`"
-        "or assign `offsets` as `torch.ones(indices.numel(), dtype=torch.int64, device=indices.device)`."
+        "please assign `offsets` as `torch.arange(0, indices.numel() + 1, dtype=torch.int64, device=indices.device)`"
+        "or assign `lengths` as `torch.ones(indices.numel(), dtype=torch.int64, device=indices.device)`."
     )
 
 

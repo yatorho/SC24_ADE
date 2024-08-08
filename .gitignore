@@ -3,4 +3,6 @@ build/
 dist/
 .vscode/
 datasets/
+**/result.txt
 *.egg-info/
+slog/
