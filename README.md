@@ -5,6 +5,22 @@ This repo is for SC 2024 artifacts evaluation.
 
 ## Environment Setup
 
+### Prerequisites
+
++ CUDA 11.8 or later
++ torch 2.1.0+cu118
++ torchrec 0.5.0+cu118
+
+You may encounter compatibility issues when using the `torcrec`, if your `torch` or `torchrec` version is different from the above. Please install the corresponding version of `torch`, `torchrec` and `fbgemm-gpu` by referring to the link below: 
+
+```
+https://download.pytorch.org/whl/cu<xxx>
+```
+
+, where `<xxx>` is the CUDA version you are using, such as `118` for CUDA 11.8 and `121` for CUDA 12.1.
+
+### Installation Steps
+
 Get the source code of EcoRec and unpack it to `your_path`. Run the following commands to install EcoRec:
 
 ```
@@ -34,7 +50,7 @@ export PYTHONPATH=$PYTHONPATH:`pwd`
 
 ## Data Preparation
 
-Download meta dlrm datasets:
+Make sure you have installed GIT-LFS(Git Large File Storage) before cloning the dataset repository and then download the meta DLRM datasets: 
 
 ```
 mkdir datasets
@@ -53,14 +69,6 @@ Note: Back to the root directory before running the above command.
 ## Running Experiment
 
 We provide some scripts to run the experiments and get the results for our paper, including:
-
-+ Figure 3:
-    - We provide code to normalized lookup and memory compression rates with different numbers of TT-EMBs.
-    - Please also refer to `figure3/README.md` for more details.
-
-+ Figure 4:
-    - We provide code for redundancy analysis of DLRM datasets and TT computing pattern.
-    - Please also refer to `figure4/README.md` for more details.
 
 + Figure 10:
     - We provide scripts to run the distributed DLRM training experiment.
