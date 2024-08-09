@@ -17,7 +17,7 @@ You may encounter compatibility issues when using the `torcrec`, if your `torch`
 https://download.pytorch.org/whl/cu<xxx>
 ```
 
-, where `<xxx>` is the CUDA version you are using, such as `118` for CUDA 11.8 and `121` for CUDA 12.1.
+, where `<xxx>` is the CUDA version you are using, such as `118` for CUDA 11.8, `121` for CUDA 12.1, etc.
 
 ### Installation Steps
 
