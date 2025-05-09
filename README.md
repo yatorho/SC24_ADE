@@ -85,3 +85,17 @@ We provide some scripts to run the experiments and get the results for our paper
 + Figure 16:
     - We provide scripts to assess the efficiency of the table-wise pipeline model, reordering features, and slope feature counts strategy.
     - Please also refer to `figure16/README.md` for more details.
+
+##  Citation
+If you use Eco-Rec in your research, please consider citing our paper:
+```bash
+@inproceedings{wang2024accelerating,
+  title={Accelerating Distributed DLRM Training with Optimized TT Decomposition and Micro-Batching},
+  author={Wang, Weihu and Xia, Yaqi and Yang, Donglin and Zhou, Xiaobo and Cheng, Dazhao},
+  booktitle={SC24: International Conference for High Performance Computing, Networking, Storage and Analysis},
+  pages={1--15},
+  year={2024},
+  organization={IEEE}
+}
+
+```
